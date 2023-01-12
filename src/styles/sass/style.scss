@@ -1,7 +1,7 @@
 $grey-color: #4B5D68;
 $blue-color: #212353;
 $lila-color: #9C69E2;
-$dark-lila-color: #8A40EE;;
+$dark-lila-color: #8A40EE;
 $pink-color: #F063B8;
 $light-pink-color: #FDE8F5;
 %montserrat-300 {
@@ -71,14 +71,35 @@ $light-pink-color: #FDE8F5;
   justify-content: space-between;
   align-items: center;
 }
+.burger {
+display: none;
+  .line {
+    width: 50px;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: $dark-lila-color;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.close-sign {
+  display: none;
+}
 .logo {
   width: 49px;
   height: 35px;
+  margin-right: 25px;
+}
+.nav {
+  width: 44%;
+  display: flex;
+  justify-content: space-between;
 }
 .nav__list {
-  margin-left: 120px;
   display: inline-block;
   font-size: 0;
+  min-width: 348px;
 }
 .nav__item {
   display: inline-block;
@@ -95,6 +116,9 @@ $light-pink-color: #FDE8F5;
   color: $grey-color;
   &:hover {
     cursor: pointer;
+    color: $lila-color;
+  }
+  &:active {
     color: $lila-color;
   }
 }
@@ -127,14 +151,16 @@ section {
 }
 /* styling for who-we-are starts */
 .who-we-are__first-div {
-  background-image: url("../../images/who-we-are_bg.svg");
-  background-position: right bottom;
-  background-size: 770px 407px;
-  background-repeat: no-repeat;
-  height: 489px;
+  position: relative;
   margin-bottom: 100px;
+  min-height: 489px;
   .who-we-are__text {
     max-width: 370px;
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 .who-we-are__title {
@@ -163,7 +189,7 @@ section {
 .who-we-are__second-div {
   background-color: $light-pink-color;
   border-radius: 50px;
-  height: 560px;
+  min-height: 560px;
   display: flex;
   justify-content: space-between;
   & > div {
@@ -172,10 +198,10 @@ section {
     max-width: 500px;
   }
   img {
+    width: 400px;
+    height: 410px;
     margin-left: 40px;
-    max-height: 410px;
-    max-width: 400px;
-    margin-top: 43px;
+    margin-top: 75px;
   }
 
 }
@@ -434,6 +460,13 @@ background-image: url('../../images/card4_vector.svg'), url('../../images/card4_
   a {
     text-decoration: none;
     color: $grey-color;
+    &:hover {
+      color: $lila-color;
+      cursor: pointer;
+    }
+    &:active {
+      color: $lila-color;
+    }
   }
 }
 .social-media__links {
@@ -457,6 +490,7 @@ background-image: url('../../images/card4_vector.svg'), url('../../images/card4_
     fill: white;
   }
   &:hover svg {
+
     fill: #00ACEE;
   }
   &:hover {

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" >
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+      content="width=device-width, initial-scale=1.0"
+    >
     <title>Exam</title>
     <link rel="stylesheet" href="src/styles/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,14 +24,25 @@
     <link
       rel="stylesheet"
       href="src/styles/css/tablet.css"
-      media="screen and (min-width: 768px) and (max-width: 1390px)"
+      media="screen  and (max-width: 1199px)"
+    />
+    <link
+            rel="stylesheet"
+            href="src/styles/css/phone.css"
+            media="screen  and (max-width: 767px)"
     />
   </head>
   <body>
     <header class="header">
       <div class="wrapper header__wrapper">
+
         <nav class="nav">
           <img class="logo" src="src/images/logo.svg" alt="logo" />
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav_link" href="#"> About </a>
@@ -45,7 +56,19 @@
             <li class="nav__item">
               <a class="nav_link link_button" href="#"> Sign Up </a>
             </li>
+            <li class="close-sign">
+              <svg fill="#9C69E2"  id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                   viewBox="0 0 24 24" xml:space="preserve">
+                  <style type="text/css">
+	              .st0{fill:none;}
+                </style>
+                <path d="M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M16.9,15.5l-1.4,1.4L12,13.4l-3.5,3.5l-1.4-1.4l3.5-3.5
+	L7.1,8.5l1.4-1.4l3.5,3.5l3.5-3.5l1.4,1.4L13.4,12L16.9,15.5z"/>
+                <rect class="st0" width="24" height="24"/>
+                </svg>
+            </li>
           </ul>
+
         </nav>
         <a href="#" class="request-demo">
           Request Demo
@@ -76,6 +99,7 @@
       <div class="wrapper main__wrapper">
         <section class="who-we-are">
           <div class="who-we-are__first-div">
+            <img src="src/images/who-we-are_bg.svg" alt="" />
             <h1 class="who-we-are__title">Save your data storage here.</h1>
             <p class="who-we-are__text">
               Data Warehouse is a data storage area that has been tested for
@@ -83,6 +107,7 @@
               of being stolen by others.
             </p>
             <a class="who-we-are_link" href="#"> Learn more </a>
+
           </div>
           <div class="who-we-are__second-div">
             <img src="src/images/who-we-are_bg2.svg" alt="" />
@@ -348,5 +373,6 @@
         </p>
       </div>
     </footer>
+  <script src="index.js" defer></script>
   </body>
 </html>
