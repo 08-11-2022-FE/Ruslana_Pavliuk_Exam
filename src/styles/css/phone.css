@@ -1,0 +1,142 @@
+.wrapper {
+  max-width: 767px;
+  min-width: 322px;
+}
+
+.header__wrapper {
+  position: relative;
+}
+
+.nav {
+  justify-content: flex-start;
+}
+
+.burger {
+  display: inline-block;
+}
+
+.nav__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.nav__list .nav__item {
+  padding-left: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid rgba(156, 105, 226, 0.5);
+}
+
+.close-sign {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.who-we-are__title {
+  font-size: 70px;
+}
+
+.who-we-are__text {
+  font-size: 20px;
+}
+
+.feature__text {
+  font-size: 20px;
+}
+
+.card__info {
+  margin-left: 0;
+  margin-top: 120px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card {
+  background-position: top center;
+  min-width: 350px;
+}
+
+.card__title {
+  font-size: 26px;
+}
+
+.card__text {
+  font-size: 18px;
+}
+
+.card__link {
+  font-size: 18px;
+}
+
+.testimonials__card {
+  width: 90%;
+  min-width: 300px;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.user-name {
+  font-size: 18px;
+}
+
+.user-mail {
+  font-size: 16px;
+}
+
+.user__intro {
+  font-size: 18px;
+}
+
+.heading__links {
+  flex-direction: column;
+}
+
+.footer__link {
+  margin-bottom: 40px;
+}
+
+.address {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__links {
+  flex-wrap: wrap;
+}
+
+.footer__list {
+  width: 50%;
+  text-align: center;
+}
+
+.social-media {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-media__links {
+  margin: 0 auto;
+}
+
+.social-media__link:active svg {
+  fill: #00ACEE;
+}
+
+.social-media__link:active {
+  background: #FFFFFF;
+  border: 1px solid #00ACEE;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=phone.css.map */

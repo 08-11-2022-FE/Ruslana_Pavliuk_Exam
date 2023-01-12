@@ -1,0 +1,114 @@
+.wrapper {
+  min-width: 768px;
+  max-width: 1199px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.who-we-are__first-div {
+  display: flex;
+  flex-direction: column;
+}
+.who-we-are__first-div img {
+  position: static;
+  width: 80%;
+  margin: 0 auto;
+}
+.who-we-are__first-div .who-we-are__text {
+  max-width: 100%;
+  text-align: center;
+}
+
+.who-we-are__title {
+  max-width: 100%;
+  text-align: center;
+}
+
+.who-we-are_link {
+  margin: 0 auto;
+}
+
+.who-we-are__second-div {
+  flex-direction: column;
+}
+.who-we-are__second-div div {
+  max-width: 100%;
+  text-align: center;
+  margin-right: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.who-we-are__second-div img {
+  margin: 30px auto 0 auto;
+}
+
+.cards {
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.card1,
+.card2 {
+  margin-bottom: 0;
+}
+
+.card {
+  max-width: 700px;
+}
+
+.card__info {
+  max-width: 530px;
+  margin-left: 170px;
+}
+
+.testimonials__cards {
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials__card {
+  max-width: 700px;
+}
+.testimonials__card:first-child {
+  margin-bottom: 0;
+}
+
+.heading {
+  flex-direction: column;
+  align-items: center;
+}
+.heading div {
+  text-align: center;
+}
+
+.heading__links {
+  margin-top: 50px;
+}
+
+.footer_nav {
+  flex-direction: column;
+  align-items: center;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.footer__links {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.footer__wrapper {
+  max-width: 670px;
+}
+
+.footer__rights {
+  text-align: center;
+}
+
+/*# sourceMappingURL=tablet.css.map */
